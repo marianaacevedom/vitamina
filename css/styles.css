@@ -218,9 +218,8 @@ border: solid 1px #356481 ;
   display: flex;
   flex-direction: column;
   border: solid 1px #356481;
-  width: 50%;
   padding: 2em;
-  margin: 3em;
+  margin: 2em;
 }
 .boton {
 display: inline;
@@ -254,8 +253,9 @@ svg {
 }
 .portada{
   display: block;
-  width: 120%;
-  margin: 2em;
+  width: 100%;
+  align-content: center;
+  padding: 1em;
 }
 iframe{
   display: block;
@@ -268,4 +268,45 @@ iframe{
   justify-content: center ;
   width: 400px;
   padding-top: 4em;
+}
+.grid-layout{
+  display: grid;
+  grid-template-columns: 3fr 3fr 2fr;
+  grid-template-rows: 2fr 3fr 3fr;
+  grid-template-areas: 
+  "titulo titulo titulo"
+  "promos1 promos1 aside"
+  "promos2 promos2 aside";
+  column-gap: 1em;
+  row-gap: 1em;
+  width: 100%;
+  margin: 0;
+}
+.grid-layout h1 {
+  grid-area: titulo;
+}
+.grid-layout .promos1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  grid-area: promos1;
+}
+.grid-layout .promos2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  grid-area: promos2;
+}
+.grid-layout aside {
+  grid-area: aside;
+}
+.grid-layout aside img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 1000px;
 }
