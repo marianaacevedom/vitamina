@@ -79,10 +79,20 @@ a {
   color:#DEE7FF;
   text-decoration: none ;
 }
+a:hover {
+  color:#F2B279;
+}
+.boton:hover {
+  color: #DEE7FF;
+  background-color: #1C3952;
+}
 main a {
   color: #F2B279;
     font-weight: 400;
     font-style: normal;
+}
+main a:hover {
+  color: #F28F6B;
 }
 h1{
   color: #F28F6B;
