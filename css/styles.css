@@ -48,28 +48,6 @@ colores
 body{
   font-family: "Lato", sans-serif;
 }
-header{
-  display: block;
-  position: fixed;
-  background-color:#1C3952;
-  text-align: center;
-  width: 100%;
-  top: 0em;
-  padding: 1em;
-}
-header ul {
-  display: inline;
-}
-header ul li {
-  display: inline;
-  color: #356481;
-  font-weight: 400;
-  font-style: normal;
-  list-style-type: none ;
-  text-decoration: none ;
-  padding-left: 1.5em;
-  padding-right: 1.5em;
-}
 .lista {
   color: #1C3952;
   font-weight: 400;
@@ -102,8 +80,6 @@ h1{
     font-style: normal;
     font-size: 3em;
     text-align: center;
-    margin-top: 2em;
-    margin-bottom: 2em;
 }
 h2{
   color: #F28F6B;
@@ -118,7 +94,6 @@ h3{
     font-style: normal;
     font-size: 1.5em;
     text-align: center;
-    margin: 1em 0em 1em 0em;
 }
 h4{
   color: #F28F6B;
@@ -146,6 +121,12 @@ form{
     width: 100%;
     padding: 1em;
 }
+.portada{
+  display: block;
+  width: 100%;
+  align-content: center;
+  padding: 1em;
+}
 input { 
   color: #1C3952;
   font-weight: 400;
@@ -163,13 +144,9 @@ select {
   color: #356481;
   text-align: center;
 }
-.recomendaciones {
-display: flex;
-flex-direction: column;
-width: 25%;
-padding: 1.5em;
-margin: 2em;
-border: solid 1px #356481 ;
+.tarjetas .img {
+  width: 95%;
+  padding: 0.5em;
 }
 .servicios {
   display: flex;
@@ -194,14 +171,6 @@ border: solid 1px #356481 ;
   padding: 1.5em;
   width: 110%;
 }
-.sinborde {
-  display: flex;
-  flex-direction: column;
-  width: 370px;
-  height: 150px;
-  padding: 1em;
-  margin: 2em;
-}
 .equipo {
   display: flex;
   flex-direction: column;
@@ -213,16 +182,6 @@ border: solid 1px #356481 ;
   border: 1px #DEE7FF;
   padding: 1em 1em 1em 1em;
   margin: 0.5em;
-}
-.tarjetas {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.tarjetas .img {
-  width: 95%;
-  padding: 0.5em;
 }
 .promociones {
   display: flex;
@@ -261,62 +220,312 @@ svg {
   justify-content: stretch;
   padding: 1em;
 }
-.portada{
-  display: block;
-  width: 100%;
-  align-content: center;
-  padding: 1em;
-}
 iframe{
   display: block;
   width: 100%;
   padding: 1em;
 }
-.logo{
-  flex-direction: row;
-  display: flex;
-  justify-content: center ;
-  width: 400px;
-  padding-top: 4em;
+/* mobile */
+@media screen and (min-width: 320px) and (max-width:767px){
+  .logo{
+    flex-direction: row;
+    display: flex;
+    justify-content: center ;
+    width: 50%;
+    padding-top: 7em;
+  }
+  body {font-size: 80%};
+  .tarjetas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1em;
+  }
+  .recomendaciones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    padding: 1.5em;
+    margin-top: 2em;
+    border: solid 1px #356481 ;
+    }
+    .sinborde {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 150px;
+      padding: 1em;
+    }
+  h1{
+    margin: 1.5em;
+  }
+  h3 {
+    margin: 1em;
+  }
+  .grid-layout aside {
+    display: none;
+  }
+  .grid-layout{
+    display: grid;
+    grid-template-columns: 320px;
+    grid-template-rows: 200px 700px 400px 700px 400px;
+    grid-template-areas: 
+      "titulo"
+      "promo1"
+      "promo2"
+      "promo3" 
+      "promo4";
+    column-gap: 1em;
+    row-gap: 1em;
+    width: 100%;
+    margin: 1em;
+  }
+  .grid-layout h1 {
+    grid-area: titulo;
+  }
+  .grid-layout .promo1 {
+    grid-area: promo1;
+  }
+  .grid-layout .promo2 {
+    grid-area: promo2;
+  }
+  .grid-layout .promo3 {
+    grid-area: promo3;
+  }
+  .grid-layout .promo4 {
+    grid-area: promo4;
+  }
+.menudesktop {
+display: none;
 }
-.grid-layout{
-  display: grid;
-  grid-template-columns: 3fr 3fr 2fr;
-  grid-template-rows: 2fr 3fr 3fr;
-  grid-template-areas: 
-  "titulo titulo titulo"
-  "promos1 promos1 aside"
-  "promos2 promos2 aside";
-  column-gap: 1em;
-  row-gap: 1em;
+.menumobile .navbar .navbar-expand-xs div button span svg{
+  height: 1em;
+  width: 1em;
+  color: #F2B279;
+}
+header{
+  display: block;
+  position: fixed;
+  background-color:#1C3952;
+  text-align: center;
   width: 100%;
-  margin: 0;
+  top: 0em;
+  padding: 1em;
+  height: 5em;
 }
-.grid-layout h1 {
-  grid-area: titulo;
+header ul {
+  display: inline;
+  background-color: #1C3952;
 }
-.grid-layout .promos1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  grid-area: promos1;
+header ul li{
+  display: inline;
+  color: #DEE7FF;
+  font-weight: 400;
+  font-style: normal;
+  list-style-type: none ;
+  text-decoration: none ;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  background-color: #1C3952;
 }
-.grid-layout .promos2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  grid-area: promos2;
 }
-.grid-layout aside {
-  grid-area: aside;
+/* tablet */
+@media screen and (min-width: 768px) and (max-width:1023px){
+  .logo{
+    flex-direction: row;
+    display: flex;
+    justify-content: center ;
+    width: 40%;
+    padding-top: 5em;
+  }
+  body{font-size: 90%}
+  .tarjetas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .recomendaciones {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    padding: 1.5em;
+    margin: 1em;
+    border: solid 1px #356481 ;
+    }
+  .sinborde {
+      display: flex;
+      flex-direction: column;
+      width: 370px;
+      height: 150px;
+      padding: 1em;
+      margin: 1em 1em 5em 1em;
+    }
+  h1 {
+    margin: 2em 2em 1em 2em;
+  }
+  h3 {
+    margin: 1em;
+  }
+  .grid-layout aside{
+    display: none;
+  }
+  .grid-layout{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 700px 700px ;
+    grid-template-areas: 
+      "titulo titulo"
+      "promo1 promo2"
+      "promo3 promo4";
+    column-gap: 1em;
+    row-gap: 1em;
+    width: 100%;
+    margin: 1em;
+  }
+  .grid-layout h1 {
+    grid-area: titulo;
+  }
+  .grid-layout .promo1 {
+    grid-area: promo1;
+  }
+  .grid-layout .promo2 {
+    grid-area: promo2;
+  }
+  .grid-layout .promo3 {
+    grid-area: promo3;
+  }
+  .grid-layout .promo4 {
+    grid-area: promo4;
+  }
+  .menumobile {
+    display: none;
+  }
+header{
+  display: block;
+  position: fixed;
+  background-color:#1C3952;
+  text-align: center;
+  width: 100%;
+  top: 0em;
+  padding: 1em;
 }
+header ul {
+  display: inline;
+}
+header ul li {
+  display: inline;
+  color: #356481;
+  font-weight: 400;
+  font-style: normal;
+  list-style-type: none ;
+  text-decoration: none ;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+}
+/* desktop */
+@media screen and (min-width: 1024px){
+  .logo{
+    flex-direction: row;
+    display: flex;
+    justify-content: center ;
+    width: 40%;
+    padding-top: 5em;
+  }
+  .tarjetas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .recomendaciones {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    padding: 1.5em;
+    margin: 2em;
+    border: solid 1px #356481 ;
+    }
+  .sinborde {
+      display: flex;
+      flex-direction: column;
+      width: 370px;
+      height: 150px;
+      padding: 1em;
+      margin: 2em;
+    }
+  h1 {
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+  h3 {
+    margin: 1em;
+  }
+  .grid-layout{
+    display: grid;
+    grid-template-columns: 3fr 3fr 2fr;
+    grid-template-rows: 200px 500px 500px;
+    grid-template-areas: 
+      "titulo titulo titulo"
+      "promo1 promo2 aside"
+      "promo3 promo4 aside";
+    column-gap: 1em;
+    row-gap: 1em;
+    width: 100%;
+    margin: 1em;
+  }
+  .grid-layout h1 {
+    grid-area: titulo;
+    margin: 2em 2em 0em 2em;
+  }
+  .grid-layout .promo1 {
+    grid-area: promo1;
+  }
+  .grid-layout .promo2 {
+    grid-area: promo2;
+  }
+  .grid-layout .promo3 {
+    grid-area: promo3;
+  }
+  .grid-layout .promo4 {
+    grid-area: promo4;
+  }
+  .grid-layout aside {
+    grid-area: aside;
+  }
 .grid-layout aside img {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 270px;
-  height: 1000px;
+  height: 950px;
+}
+.menumobile{
+  display: none;
+}
+header{
+  display: block;
+  position: fixed;
+  background-color:#1C3952;
+  text-align: center;
+  width: 100%;
+  top: 0em;
+  padding: 1em;
+}
+header ul {
+  display: inline;
+}
+header ul li {
+  display: inline;
+  color: #356481;
+  font-weight: 400;
+  font-style: normal;
+  list-style-type: none ;
+  text-decoration: none ;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
 }
