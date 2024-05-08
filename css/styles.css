@@ -258,7 +258,7 @@ iframe{
       padding: 1em;
     }
   h1{
-    margin: 1.5em;
+    margin: 2em;
   }
   h3 {
     margin: 1em;
@@ -299,11 +299,6 @@ iframe{
 .menudesktop {
 display: none;
 }
-.menumobile .navbar .navbar-expand-xs div button span svg{
-  height: 1em;
-  width: 1em;
-  color: #F2B279;
-}
 header{
   display: block;
   position: fixed;
@@ -328,6 +323,9 @@ header ul li{
   padding-left: 1.5em;
   padding-right: 1.5em;
   background-color: #1C3952;
+}
+.nav-link {
+  color: #DEE7FF;
 }
 }
 /* tablet */
@@ -501,7 +499,7 @@ header ul li {
   justify-content: center;
   align-items: center;
   width: 270px;
-  height: 950px;
+  height: 900px;
 }
 .menumobile{
   display: none;
