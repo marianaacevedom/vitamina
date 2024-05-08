@@ -299,6 +299,9 @@ iframe{
 .menudesktop {
 display: none;
 }
+.nocarrusel {
+  display: none;
+}
 header{
   display: block;
   position: fixed;
@@ -400,6 +403,9 @@ header ul li{
   .menumobile {
     display: none;
   }
+  .carruselmobile {
+    display: none;
+  }
 header{
   display: block;
   position: fixed;
@@ -459,7 +465,7 @@ header ul li {
     margin-bottom: 2em;
   }
   h3 {
-    margin: 1em;
+    margin: 3em 1em 1em 1em;
   }
   .grid-layout{
     display: grid;
@@ -502,6 +508,9 @@ header ul li {
   height: 900px;
 }
 .menumobile{
+  display: none;
+}
+.carruselmobile {
   display: none;
 }
 header{
