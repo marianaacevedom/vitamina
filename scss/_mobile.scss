@@ -1,0 +1,168 @@
+@media screen and (min-width: 320px) and (max-width:767px){
+    body {
+        font-size: 80%;
+        header{
+            display: block;
+            position: fixed;
+            background-color: $background-dark;
+            text-align: center;
+            width: 100%;
+            top: 0em;
+            padding: 1em;
+            height: 5em;
+            .menudesktop {
+                display: none;
+                }
+            ul {
+                display: inline;
+                background-color: $background-dark;
+                li{
+                    display: inline;
+                    color: $celeste;
+                    font-weight: 400;
+                    font-style: normal;
+                    list-style-type: none ;
+                    text-decoration: none ;
+                    padding-left: 1.5em;
+                    padding-right: 1.5em;
+                    background-color: $background-dark;
+                    } 
+                }
+            .nav-link {
+                color: $celeste;
+                }
+            .navbar-toggler{
+                color: $celeste;
+                }
+            }
+        main{
+            aside {
+                display: none;
+                }
+            .nocarrusel {
+            display: none;
+            }
+            .serviciosdesktop {
+                display: none;
+            }
+            .logo{
+            flex-direction: row;
+            display: flex;
+            justify-content: center;
+            width: 70%;
+            padding-top: 7em;
+            }
+            h1{
+            padding: 2em 0.5em 1em 0.5em;
+            }
+            h3 {
+            margin: 1em;
+            }
+            .serviciosmobile {
+                article {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: start;
+                    width: 90%;
+                    margin-top: 1em;
+                    border: solid 1px $azuloscuro;
+                    h2{
+                        padding: 1em;
+                    }
+                    p{
+                        text-align: justify;
+                        margin: 1em;
+                    }
+                    img{
+                        width: 90%;
+                        margin-bottom: 1em;
+                    }   
+                }
+            }
+            .tarjetas {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin: 1em;
+                .equipo {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: start;
+                    align-items: center;
+                    // background-color: $background-light;
+                    background-image: linear-gradient(to bottom, #dee7ff, #dee7ff, #dee7ff, #dee7ff, #dee7ff, #e1e9ff, #e5eaff, #e8ecff, #eff0ff, #f5f5ff, #fafaff, #ffffff);
+                    width: 280px;
+                    height: 530px;
+                    border: 1px $celeste;
+                    padding: 1em 1em 1em 1em;
+                    margin: 0.5em;
+                    h3 {
+                        margin: 1em;
+                    }
+                    h4 {
+                        margin: 0em 1em 1em 1em;
+                    }
+                    .img {
+                        width: 95%;
+                        padding: 0.5em;
+                    }
+                }
+                .sinborde {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    height: 150px;
+                    padding: 1em;
+                }
+            }
+            .carruselmobile {
+                margin-top: 3em;
+                #carouselExample {
+                    .carousel-inner {
+                    .recomendaciones {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        width: 90%;
+                        padding: 1.5em;
+                        margin-top: 2em;
+                        border: solid 1px $azulclaro;
+                        p{
+                            color: $azuloscuro;
+                        }
+                    }
+                    }
+                }
+            }
+        }
+        .grid-layout{
+            display: grid;
+            grid-template-columns: 320px;
+            grid-template-areas: 
+                "titulo"
+                "promo1"
+                "promo2"
+                "promo3" 
+                "promo4";
+            column-gap: 1em;
+            row-gap: 1em;
+            width: 100%;
+                h1 {
+                grid-area: titulo;
+                }
+                .promo1 {
+                grid-area: promo1;
+                }
+                .promo2 {
+                grid-area: promo2;
+                }
+                .promo3 {
+                grid-area: promo3;
+                }
+                .promo4 {
+                grid-area: promo4;
+                }
+                
+            }
+    }
+}

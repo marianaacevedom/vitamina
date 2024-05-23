@@ -1,0 +1,173 @@
+    @media screen and (min-width: 1024px){
+    body {
+        header {
+            display: block;
+            position: fixed;
+            background-color:#1C3952;
+            text-align: center;
+            width: 100%;
+            top: 0em;
+            padding: 1em;
+            .menumobile {
+                display: none;
+                }
+            ul {
+                display: inline;
+                li {
+                display: inline;
+                color: $azulclaro;
+                font-weight: 400;
+                font-style: normal;
+                list-style-type: none ;
+                text-decoration: none ;
+                padding-left: 1.5em;
+                padding-right: 1.5em;
+                }
+            }
+        }
+        main {
+            .nocarrusel {
+                margin-top: 4em;
+            }
+            .carruselmobile {
+            display: none;
+            }
+            .serviciosmobile{
+                display: none;
+            }
+            .logo{
+            flex-direction: row;
+            display: flex;
+            justify-content: center;
+            width: 40%;
+            padding: 5em 1em 1em 0em;
+            }
+            h1{
+            margin-top: 2em;
+            margin-bottom: 2em;
+            }
+            h2{
+            margin-top: 0.5em;
+            }
+            h3 {
+            margin-top: 2em;
+            }
+            .serviciosdesktop {
+                .servicios {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: stretch;
+                    width: 90%;
+                    border: solid 1px $azulclaro;
+                    margin-top: 1em;
+                    .servicio-texto {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly;
+                        align-items: center;
+                        padding: 1em;
+                        text-align: justify;
+                    }
+                    .servicio-imagen {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 1.5em;
+                        width: 100%;
+                    }
+                }
+            }
+            .tarjetas {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            .equipo {
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: center;
+                background-color: $background-light;
+                width: 400px;
+                height: 700px;
+                border: 1px $celeste;
+                padding: 1em 1em 1em 1em;
+                margin: 0.5em;
+                h3 {
+                    margin: 1em;
+                }
+                h4 {
+                    margin: 0em 1em 1em 1em;
+                }
+                .img {
+                    width: 95%;
+                    padding: 0.5em;
+                }
+            }
+                .sinborde {
+                display: flex;
+                flex-direction: column;
+                width: 370px;
+                height: 150px;
+                padding: 1em;
+                margin: 2em;
+                }
+                .recomendaciones {
+                    display: flex;
+                    flex-direction: column;
+                    width: 25%;
+                    padding: 1.5em;
+                    margin: 2em;
+                    border: solid 1px $azulclaro ;
+                    }
+                }
+            }
+        .grid-layout{
+            display: grid;
+            grid-template-columns: 3fr 3fr 2fr;
+            grid-template-rows: 200px 500px 500px;
+            grid-template-areas: 
+                "titulo titulo titulo"
+                "promo1 promo2 aside"
+                "promo3 promo4 aside";
+            column-gap: 1em;
+            row-gap: 1em;
+            width: 95%;
+            margin: 1em;
+                h1 {
+                    grid-area: titulo;
+                    margin: 2em 2em 0em 2em;
+                    }
+                .promo1 {
+                    grid-area: promo1;
+                    }
+                .promo2 {
+                    grid-area: promo2;
+                    }
+                .promo3 {
+                    grid-area: promo3;
+                    }
+                .promo4 {
+                    grid-area: promo4;
+                    }
+                aside {
+                    grid-area: aside;
+                    transition: all 2s;
+                        & :hover {
+                            margin: 5px;
+                            border: 2px solid $naranjaclaro;
+                        }
+                    img {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        width: 270px;
+                        height: 900px;
+                    }
+                }
+            } 
+        }
+    } 

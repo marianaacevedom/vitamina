@@ -1,0 +1,188 @@
+$azuloscuro: #1C3952;
+$celeste: #DEE7FF;
+$naranjaclaro: #F2B279;
+$naranjaoscuro: #F28F6B;
+$azulclaro: #356481;
+$blanco: white;
+
+$font-p: "Lato", sans-serif;
+$font-h: "Oswald", sans-serif;
+
+$background-dark: #1C3952;
+$background-light: #DEE7FF;
+$background-orange: #F28F6B;
+
+@import "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Oswald:wght@200..700&display=swap";
+* {
+	margin: 0 auto;
+	box-sizing: border-box;
+	min-width: 0;
+	max-width: 1200px;
+}
+@import 'desktop';
+@import 'tablet';
+@import 'mobile';
+body{
+	font-family: $font-p;
+    header{
+        a {
+            color: $celeste;
+            text-decoration: none ;
+        &:hover {
+            color: $naranjaclaro;
+        }
+        }
+    }
+    main {
+        margin-top: 1em;
+        margin-bottom: 1em;
+        a {
+            color: $naranjaclaro;
+            font-weight: 400;
+            font-style: normal;
+            text-decoration: none;
+            &:hover {
+            color: $naranjaoscuro;
+            }
+        }
+        h1{
+            color: $naranjaoscuro;
+            font-family: $font-h;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 3em;
+            text-align: center;
+        }
+        .portada{
+            display: block;
+            width: 100%;
+            align-content: center;
+            padding-top: 2em;
+            padding-bottom: 2em;
+        }
+        .justify {
+            text-align: justify;
+        }
+        iframe{
+            display: block;
+            width: 100%;
+            padding: 1em;
+        }
+        h2{
+            color: $naranjaoscuro;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 1.8em;
+            text-align: center;
+        }
+        h3{
+            color: $naranjaoscuro;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 1.5em;
+            text-align: center;
+        }
+        h4{
+            color: $naranjaoscuro;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 1.3em;
+            text-align: center;
+        }
+        p{
+            color: $azuloscuro;
+            font-weight: 400;
+            font-style: normal;
+            text-align: center;
+            font-size: 1em;
+            padding: 0.3em;
+            margin: 0.3em;
+        }
+        form{ 
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            color: $azuloscuro;
+            font-weight: 400;
+            font-style: normal;
+            width: 100%;
+            padding: 1em;
+            }
+        input { 
+                color: $azuloscuro;
+                font-weight: 400;
+                font-style: normal;
+            }
+        select { 
+                color: $azuloscuro;
+                font-weight: 400;
+                font-style: normal;
+            }
+        .textoenazul {
+            color: $azulclaro;
+            text-align: center;
+            }
+        .promociones {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            border: solid 1px $azulclaro;
+            padding: 1.5em;
+            margin: 2em;
+            
+            h2{
+                margin: 0.5em 0em 0.5em 0em;
+            }
+            h3{
+                margin: 0em 0em 0.5em 0em;
+            }
+            p{
+                padding: 0em 0em 1em 0em;
+                @extend .justify;
+            }
+            .lista {
+                color: $azuloscuro;
+                font-weight: 400;
+                font-style: normal;
+            }
+            .boton {
+                display: inline;
+                background-color: $background-orange;
+                color: $blanco;
+                margin: 5em;
+                padding: 4px 6px 4px 6px; 
+                &:hover {
+                color: $celeste;
+                background-color: $background-dark;
+                }
+            }
+        }
+    }
+    footer{
+        display: block;
+        background-color: $background-dark;
+        margin-top: 2em;
+        p {
+            color: $azulclaro;
+            font-weight: 400;
+            font-style: normal;
+            text-align: center;
+            padding: 1em;
+        }
+        svg {
+            display: inline;
+            color: $azulclaro;
+            &:hover {
+                color: $naranjaclaro;
+            }
+        }
+        .footersvg{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: stretch;
+            padding: 1em;
+        }
+    }
+}
