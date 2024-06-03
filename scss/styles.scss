@@ -133,6 +133,9 @@ body{
         .equipo {
             background-image: linear-gradient(to bottom, #dee7ff, #dee7ff, #dee7ff, #dee7ff, #dee7ff, #e1e9ff, #e5eaff, #e8ecff, #eff0ff, #f5f5ff, #fafaff, #ffffff);
         }
+        .tarjetas {
+            z-index: 2;
+        }
         .promociones {
             display: flex;
             flex-direction: column;

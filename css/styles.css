@@ -576,6 +576,9 @@ body main .textoenazul {
 body main .equipo {
   background-image: linear-gradient(to bottom, #dee7ff, #dee7ff, #dee7ff, #dee7ff, #dee7ff, #e1e9ff, #e5eaff, #e8ecff, #eff0ff, #f5f5ff, #fafaff, #ffffff);
 }
+body main .tarjetas {
+  z-index: 2;
+}
 body main .promociones {
   display: flex;
   flex-direction: column;
