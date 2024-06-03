@@ -84,6 +84,7 @@
     width: 100%;
   }
   body main .tarjetas {
+    z-index: 2;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -405,7 +406,6 @@
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    background-image: linear-gradient(to bottom, #dee7ff, #dee7ff, #dee7ff, #dee7ff, #dee7ff, #e1e9ff, #e5eaff, #e8ecff, #eff0ff, #f5f5ff, #fafaff, #ffffff);
     width: 280px;
     height: 530px;
     border: 1px #DEE7FF;
@@ -471,6 +471,9 @@
 }
 body {
   font-family: "Lato", sans-serif;
+}
+body header {
+  z-index: 1;
 }
 body header a {
   color: #DEE7FF;
@@ -569,6 +572,9 @@ body main select {
 body main .textoenazul {
   color: #356481;
   text-align: center;
+}
+body main .equipo {
+  background-image: linear-gradient(to bottom, #dee7ff, #dee7ff, #dee7ff, #dee7ff, #dee7ff, #e1e9ff, #e5eaff, #e8ecff, #eff0ff, #f5f5ff, #fafaff, #ffffff);
 }
 body main .promociones {
   display: flex;
